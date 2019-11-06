@@ -34,6 +34,10 @@ public class BulletPoolManager : MonoBehaviour
     //TODO: create a structure to contain a collection of bullets
     public List<GameObject> bulletPool;
     public List<GameObject> activeBullets;
+    //public List<GameObject> normalBullets;
+    //public List<GameObject> redBullets;
+    //public List<GameObject> greenBullets;
+    //public List<GameObject> blueBullets;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +45,7 @@ public class BulletPoolManager : MonoBehaviour
         // TODO: add a series of bullets to the Bullet Pool
         for (int i = 0; i < 20; i++)
         {
-            bulletPool.Add(CreateInstance(type));
+            bulletPool.Add(CreateInstance(0));
         }
 
         foreach (GameObject Bullet in bulletPool)
@@ -49,7 +53,9 @@ public class BulletPoolManager : MonoBehaviour
             Bullet.gameObject.SetActive(false);
             Bullet.transform.parent = this.transform;
         }
+
     }
+
 
     // Update is called once per frame
     void Update()
@@ -57,70 +63,61 @@ public class BulletPoolManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             type = 0;
-            if (bulletPool.Count == 20)
-            {
-                for (int i = bulletPool.Count - 1; i >= 0; i--)
-                {
-                    Destroy(bulletPool[i]);
-                    //bulletPool.RemoveAt(i);
-                }
-                bulletPool.Clear();
-                for (int i = 0; i < 20; i++)
-                {
-                    bulletPool.Add(CreateInstance(type));
-                }
-            }
+            //bulletPool = normalBullets;
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             type = 1;
-            if (bulletPool.Count == 20)
-            {
-                for (int i = bulletPool.Count - 1; i >= 0; i--)
-                {
-                    Destroy(bulletPool[i]);
-                    //bulletPool.RemoveAt(i);
-                }
-                bulletPool.Clear();
-                for (int i = 0; i < 20; i++)
-                {
-                    bulletPool.Add(CreateInstance(type));
-                }
-            }
+            //bulletPool = redBullets;
+            //if (bulletPool.Count == 20)
+            //{
+            //    for (int i = bulletPool.Count - 1; i >= 0; i--)
+            //    {
+            //        Destroy(bulletPool[i]);
+            //        //bulletPool.RemoveAt(i);
+            //    }
+            //    bulletPool.Clear();
+            //    for (int i = 0; i < 20; i++)
+            //    {
+            //        bulletPool.Add(CreateInstance(type));
+            //    }
+            //}
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             type = 2;
-            if (bulletPool.Count == 20)
-            {
-                for (int i = bulletPool.Count - 1; i >= 0; i--)
-                {
-                    Destroy(bulletPool[i]);
-                    //bulletPool.RemoveAt(i);
-                }
-                bulletPool.Clear();
-                for (int i = 0; i < 20; i++)
-                {
-                    bulletPool.Add(CreateInstance(type));
-                }
-            }
+            //bulletPool = greenBullets;
+            //if (bulletPool.Count == 20)
+            //{
+            //    for (int i = bulletPool.Count - 1; i >= 0; i--)
+            //    {
+            //        Destroy(bulletPool[i]);
+            //        //bulletPool.RemoveAt(i);
+            //    }
+            //    bulletPool.Clear();
+            //    for (int i = 0; i < 20; i++)
+            //    {
+            //        bulletPool.Add(CreateInstance(type));
+            //    }
+            //}
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             type = 3;
-            if (bulletPool.Count == 20)
-            {
-                for (int i = bulletPool.Count - 1; i >= 0; i--)
-                {
-                    Destroy(bulletPool[i]);
-                    //bulletPool.RemoveAt(i);
-                }
-                bulletPool.Clear();
-                for (int i = 0; i < 20; i++)
-                {
-                    bulletPool.Add(CreateInstance(type));
-                }
-            }
+            //bulletPool = blueBullets;
+            //if (bulletPool.Count == 20)
+            //{
+            //    for (int i = bulletPool.Count - 1; i >= 0; i--)
+            //    {
+            //        Destroy(bulletPool[i]);
+            //        //bulletPool.RemoveAt(i);
+            //    }
+            //    bulletPool.Clear();
+            //    for (int i = 0; i < 20; i++)
+            //    {
+            //        bulletPool.Add(CreateInstance(type));
+            //    }
+            //}
         }
     }
 
