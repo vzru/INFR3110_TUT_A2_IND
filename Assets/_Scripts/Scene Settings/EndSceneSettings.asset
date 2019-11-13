@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene: 2
   activeSoundClip: -1
-  scoreLabelEnabled: 1
+  scoreLabelEnabled: 0
   livesLabelEnabled: 0
   highScoreLabelEnabled: 1
   startLabelSetActive: 0

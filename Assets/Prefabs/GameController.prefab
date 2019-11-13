@@ -349,6 +349,10 @@ MonoBehaviour:
   scoreLabel: {fileID: 0}
   highScoreLabel: {fileID: 0}
   scoreBoard: {fileID: 11400000, guid: 9d1696213051b5c4fbb6626b26fc172c, type: 2}
+  sceneSettings:
+  - {fileID: 11400000, guid: 513963e67d8bc7d4ca581a82979fa9cc, type: 2}
+  - {fileID: 11400000, guid: f790465546c86454cb04212c0a06f111, type: 2}
+  - {fileID: 11400000, guid: eef4134c7808466478f08d0c862c879d, type: 2}
   startLabel: {fileID: 0}
   startButton: {fileID: 0}
   endLabel: {fileID: 0}
