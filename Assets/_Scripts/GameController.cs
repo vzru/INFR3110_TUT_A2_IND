@@ -49,6 +49,8 @@ public class GameController : MonoBehaviour
         set
         {
             _lives = value;
+            scoreBoard.lives = _lives;
+
             if(_lives < 1)
             {
                 
@@ -72,7 +74,7 @@ public class GameController : MonoBehaviour
         set
         {
             _score = value;
-
+            scoreBoard.score = _score;
             
             if (scoreBoard.highScore < _score)
             {

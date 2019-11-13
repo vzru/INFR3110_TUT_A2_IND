@@ -6,7 +6,7 @@ using UnityEngine;
 
 // TODO: Bonus - make this class a Singleton!
 
-//[System.Serializable]
+[System.Serializable]
 public class BulletPoolManager : MonoBehaviour
 {
     private static BulletPoolManager _instance;
