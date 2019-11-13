@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "ScoreBoard", menuName = "Game/Settings/Score Board")]
 [System.Serializable]
-public class ScoreBoard : MonoBehaviour
+public class ScoreBoard : ScriptableObject
 {
     public int highScore;
     public int lives;

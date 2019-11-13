@@ -347,6 +347,8 @@ MonoBehaviour:
   _score: 0
   livesLabel: {fileID: 0}
   scoreLabel: {fileID: 0}
+  highScoreLabel: {fileID: 0}
+  scoreBoard: {fileID: 11400000, guid: 9d1696213051b5c4fbb6626b26fc172c, type: 2}
   startLabel: {fileID: 0}
   startButton: {fileID: 0}
   endLabel: {fileID: 0}
